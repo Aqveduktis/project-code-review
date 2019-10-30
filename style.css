@@ -1,0 +1,8 @@
+/* Example styling of a h1 element 
+h1 {
+  color: #0025FF;
+}
+*/
+body { background-color: gray;}
+h1 { color: purple;}
+p { color: black; }
