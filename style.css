@@ -2,7 +2,68 @@
 h1 {
   color: #0025FF;
 }
-*/
 body { background-color: gray;}
 h1 { color: purple;}
 p { color: black; }
+*/
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+body {
+    background-color: #FD9E61;
+}
+.box {
+  width: 80vw;
+  height: 90vh;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Hero image */
+.hero-image {
+  /* "Linear-gradient" för att addera en mörkare ton på bild (xxx.jpg). Detta gör att det är enklare att läsa texten */
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/codier/image/upload/v1587582914/hjnwsltu1spi3b4ft439.jpg");
+
+  height: 80%;
+  width: 70%;
+
+  /* Bakgrunds-position och centrering */
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/* P Placera texten i mitten av bilden */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 100%;
+  color: white;
+}
+
+.connect {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+a.btn {
+  background-image: linear-gradient(-55deg, #CB4FB1, #FEBC7D);
+  padding: 8px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn:hover {
+    background-image: linear-gradient(-55deg, rgba(203,79,177,0.7), rgba(254,188,125,0.7));
+  color: white;
+}
